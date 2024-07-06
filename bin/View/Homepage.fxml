@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.6" prefWidth="344.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomepageController">
+   <children>
+      <ImageView fitHeight="754.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/1%20-%20Homepage.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="22.0" layoutY="152.0" mnemonicParsing="false" onAction="#gotoAssessment" opacity="0.0" prefHeight="135.0" prefWidth="300.0" text="Button" />
+      <Button layoutX="22.0" layoutY="293.0" mnemonicParsing="false" onAction="#gotoReports" opacity="0.0" prefHeight="135.0" prefWidth="300.0" text="Button" />
+      <Button layoutX="21.0" layoutY="435.0" mnemonicParsing="false" onAction="#gotoOverview" opacity="0.0" prefHeight="167.0" prefWidth="147.0" text="Button" />
+      <Button layoutX="175.0" layoutY="435.0" mnemonicParsing="false" onAction="#gotoTechSupport" opacity="0.0" prefHeight="167.0" prefWidth="147.0" text="Button" />
+   </children>
+</Pane>

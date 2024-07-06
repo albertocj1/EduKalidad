@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.6" prefWidth="344.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MapOverviewController">
+   <children>
+      <ImageView fitHeight="747.0" fitWidth="542.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/5%20-%20MapOverview.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="paneReportLocation" layoutX="-1.0" layoutY="746.0" prefHeight="265.0" prefWidth="347.0" style="-fx-background-color: ;">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#3431be" height="291.0" layoutX="-2.0" layoutY="1.0" stroke="WHITE" strokeType="INSIDE" width="347.0" />
+         </children>
+      </Pane>
+      <Button fx:id="buttonLocation2" layoutX="241.0" layoutY="303.0" mnemonicParsing="false" onAction="#showReportLocation" opacity="0.0" text="Button" />
+      <Button layoutX="148.0" layoutY="119.0" mnemonicParsing="false" onAction="#showReportLocation7" opacity="0.0" text="Button" />
+      <Button layoutX="73.0" layoutY="383.0" mnemonicParsing="false" onAction="#showReportLocation3" opacity="0.0" text="Button" />
+      <Button layoutX="223.0" layoutY="508.0" mnemonicParsing="false" onAction="#showReportLocation5" opacity="0.0" text="Button" />
+      <Pane fx:id="reportLocationPane2" layoutX="20.0" layoutY="808.0" prefHeight="372.0" prefWidth="305.0">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="320.0" stroke="WHITE" strokeType="INSIDE" width="304.0" />
+            <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="23.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/5%20-%20MapPin.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="number" layoutX="45.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(02) 8525 6197">
+               <font>
+                  <Font name="Century Gothic" size="8.0" />
+               </font>
+            </Text>
+            <Line endX="257.5" startX="0.166656494140625" stroke="#3331bd80" />
+            <Text fx:id="school" layoutX="30.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manila Science High School">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="address" layoutX="45.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taft Avenue, corner Padre Faura St, Ermita, Manila" wrappingWidth="380.5703125">
+               <font>
+                  <Font name="Century Gothic" size="8.0" />
+               </font>
+            </Text>
+            <Pane layoutX="-3.0" layoutY="103.0" prefHeight="200.0" prefWidth="305.0">
+               <children>
+                  <Pane fx:id="reportPane" layoutX="16.0" layoutY="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="76.0" prefWidth="280.0">
+                     <children>
+                        <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="73.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="279.0" />
+                        <Text fx:id="nameItem" layoutX="17.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Broken Tablet Unit" />
+                        <Text fx:id="typeTicket" layoutX="18.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment" />
+                        <Text fx:id="dateTicket" layoutX="177.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="July 27, 2019" />
+                        <Text fx:id="numberTicket" layoutX="16.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#01" />
+                        <Text fx:id="statusTicket" layoutX="194.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assessing" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="reportPane1" layoutX="17.0" layoutY="91.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="76.0" prefWidth="280.0">
+                     <children>
+                        <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="73.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="279.0" />
+                        <Text fx:id="nameItem1" layoutX="17.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leaking Pipe" />
+                        <Text fx:id="typeTicket1" layoutX="17.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Infrastructure" />
+                        <Text fx:id="dateTicket1" layoutX="162.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="August 14, 2021" />
+                        <Text fx:id="numberTicket1" layoutX="16.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#02" />
+                        <Text fx:id="statusTicket1" layoutX="195.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assessing" />
+                     </children>
+                  </Pane>
+                  <Text fx:id="dateTicket11" layoutX="173.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="See more reports">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="169.0" layoutY="173.0" mnemonicParsing="false" onAction="#gotoReports" opacity="0.0" prefWidth="113.0" text="Button" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Button layoutX="20.0" layoutY="39.0" mnemonicParsing="false" onAction="#gotoHomepage" opacity="0.0" prefHeight="25.0" prefWidth="33.0" text="Button" />
+   </children>
+</Pane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#showDetails" prefHeight="106.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.containerController.reportPaneController">
+   <children>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="106.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="279.0" />
+      <Text fx:id="nameItem" layoutX="135.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Broken Tablet Unit" />
+      <Text fx:id="typeTicket" layoutX="136.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment" />
+      <Text fx:id="dateTicket" layoutX="136.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="July 27, 2019" />
+      <Text fx:id="numberTicket" layoutX="134.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#01" />
+      <Text fx:id="statusTicket" layoutX="218.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assessing">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="113.0" fitWidth="117.0" layoutX="8.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Icons/broken%20image.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

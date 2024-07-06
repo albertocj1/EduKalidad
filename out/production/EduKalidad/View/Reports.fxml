@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.6" prefWidth="344.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportsController">
+   <children>
+      <ImageView fitHeight="756.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/3%20-%20Reports%20(Empty).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="addReportBnt" layoutX="178.0" layoutY="86.0" mnemonicParsing="false" onAction="#gotoAddReport" opacity="0.0" prefHeight="43.0" prefWidth="149.0" text="Button" />
+      <Button layoutX="24.0" layoutY="47.0" mnemonicParsing="false" onAction="#gotoHomepage" opacity="0.0" prefHeight="25.0" prefWidth="30.0" text="Button" />
+      <Pane fx:id="addReportPane" prefHeight="746.0" prefWidth="344.0" style="-fx-background-color: #F6F6F6;" visible="false">
+         <children>
+            <ImageView fitHeight="746.0" fitWidth="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/3%20-%20Submit%20Report.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="29.0" layoutY="337.0" prefHeight="126.0" prefWidth="285.0" />
+            <Button layoutX="33.0" layoutY="657.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="275.0" text="Button" />
+            <Button layoutX="24.0" layoutY="47.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" text="Button" />
+         </children>
+      </Pane>
+      <ScrollPane layoutX="23.0" layoutY="165.0" prefHeight="557.0" prefWidth="299.0" style="-fx-background-color: #FFFFFF;" stylesheets="@css/scrollpane.css">
+         <content>
+            <VBox fx:id="scrollContent" />
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

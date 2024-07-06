@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.6" prefWidth="344.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SubmitReport1Controller">
+   <children>
+      <ImageView fx:id="imagebg" fitHeight="746.0" fitWidth="344.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/3%20-%20Submit%20Report%20(Tech%20Equipment)%20(2).png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="rb1" layoutX="33.0" layoutY="275.0" mnemonicParsing="false" onAction="#selectedRb" prefHeight="18.0" prefWidth="23.0" selected="true">
+         <toggleGroup>
+            <ToggleGroup fx:id="itemType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rb2" layoutX="33.0" layoutY="303.0" mnemonicParsing="false" onAction="#selectedRb" prefHeight="18.0" prefWidth="23.0" toggleGroup="$itemType" />
+      <Button fx:id="toSubmit2Btn" layoutX="30.0" layoutY="680.0" mnemonicParsing="false" onAction="#goToSubmit2" opacity="0.0" prefHeight="48.0" prefWidth="280.0" text="Button" />
+      <DatePicker fx:id="dateTF" layoutX="31.0" layoutY="516.0" prefHeight="39.0" prefWidth="280.0" />
+      <TextField fx:id="brandModelTF" layoutX="30.0" layoutY="441.0" prefHeight="44.0" prefWidth="282.0" />
+      <TextField fx:id="equipmentTypeTF" layoutX="30.0" layoutY="374.0" prefHeight="44.0" prefWidth="282.0" />
+      <TextField fx:id="conditionTF" layoutX="30.0" layoutY="609.0" prefHeight="48.0" prefWidth="282.0" />
+      <TextField fx:id="reportTitleTF" layoutX="30.0" layoutY="193.0" prefHeight="44.0" prefWidth="282.0" />
+      <Button fx:id="backToHomeBtn" layoutX="28.0" layoutY="47.0" mnemonicParsing="false" onAction="#backToHome" opacity="0.0" prefHeight="25.0" prefWidth="33.0" text="Button" />
+   </children>
+</Pane>

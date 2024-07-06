@@ -1,0 +1,25 @@
+/* Remove scroll pane border and background */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+/* Scroll bar styling */
+.scroll-bar {
+    -fx-background-color: #F0F0F0; /* Change scroll bar color */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #BDBDBD; /* Change thumb color */
+}
+
+.scroll-bar:horizontal {
+    -fx-padding: 2 0 2 0; /* Adjust horizontal padding */
+}
+
+.scroll-bar:vertical {
+    -fx-padding: 0 2 0 2; /* Adjust vertical padding */
+}
+    

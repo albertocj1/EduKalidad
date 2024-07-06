@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NeedsAssessController">
+   <children>
+      <Pane fx:id="genInfo" prefHeight="746.0" prefWidth="345.0" visible="false">
+         <children>
+            <ImageView fitHeight="122.0" fitWidth="325.0" layoutX="12.0" layoutY="17.0">
+               <image>
+                  <Image url="@../Icons/Group%2048.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="15.0" layoutY="179.0" prefHeight="33.0" prefWidth="313.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+            <Text layoutX="16.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="School Name">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Text>
+            <TextField layoutX="15.0" layoutY="252.0" prefHeight="33.0" prefWidth="313.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+            <Text layoutX="16.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="School ID">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Text>
+            <TextField layoutX="15.0" layoutY="324.0" prefHeight="33.0" prefWidth="313.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+            <Text layoutX="16.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="80.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(City/ Province)">
+               <font>
+                  <Font name="Century Gothic" size="10.0" />
+               </font>
+            </Text>
+            <TextField layoutX="16.0" layoutY="391.0" prefHeight="33.0" prefWidth="313.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+            <Text layoutX="17.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Information">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Text>
+            <TextField layoutX="15.0" layoutY="462.0" prefHeight="33.0" prefWidth="313.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+            <Text layoutX="16.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Official Email Address">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Text>
+            <TextField layoutX="15.0" layoutY="535.0" prefHeight="33.0" prefWidth="313.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+            <Text layoutX="16.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type of School ">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="118.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Elementary, Secondary, State University)">
+               <font>
+                  <Font name="Century Gothic" size="10.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="41.0" fitWidth="313.0" layoutX="17.0" layoutY="607.0">
+               <image>
+                  <Image url="@../Icons/Button.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="17.0" layoutY="606.0" mnemonicParsing="false" onAction="#gotoStep2" opacity="0.0" prefHeight="43.0" prefWidth="312.0" text="Button" />
+         </children>
+      </Pane>
+      <Pane fx:id="addAssess" prefHeight="746.0" prefWidth="345.0">
+         <children>
+            <ImageView fitHeight="85.8" fitWidth="313.0" layoutX="16.0" layoutY="22.0">
+               <image>
+                  <Image url="@../Icons/Group%2041%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="201.2" fitWidth="288.8" layoutX="22.0" layoutY="236.0">
+               <image>
+                  <Image url="@../Icons/Group%2042.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="177.0" layoutY="61.0" mnemonicParsing="false" onAction="#gotoGenInfo" opacity="0.0" prefHeight="43.0" prefWidth="155.0" text="Button" />
+            <Button layoutX="28.0" layoutY="22.0" mnemonicParsing="false" onAction="#gotoHomepage" opacity="0.0" prefHeight="25.0" prefWidth="8.0" text="Button" />
+         </children>
+      </Pane>
+      <Pane fx:id="step2" prefHeight="749.0" prefWidth="348.0" visible="false">
+         <children>
+            <ImageView fitHeight="155.0" fitWidth="319.0" layoutX="11.0" layoutY="18.0">
+               <image>
+                  <Image url="@../Icons/Group%2044%20(1).png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="3.0" layoutY="180.0" prefHeight="567.0" prefWidth="339.0">
+               <children>
+                  <ScrollPane layoutY="-1.0" prefHeight="567.0" prefWidth="340.0" style="-fx-background-color: #ffffff;">
+                     <content>
+                        <VBox prefHeight="1085.0" prefWidth="342.0">
+                           <children>
+                              <Pane prefHeight="149.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How would you rate the overall condition of the classrooms in your school?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 of 6">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font></Text>
+                                    <ImageView fitHeight="39.0" fitWidth="284.0" layoutX="17.0" layoutY="92.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="203.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is there adequate classroom furniture (desks, chairs) for all students?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 of 6">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="37.0" fitWidth="276.0" layoutX="17.0" layoutY="74.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                    <TextField layoutX="16.0" layoutY="145.0" prefHeight="43.0" prefWidth="280.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+                                    <Text layoutX="17.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If No, please describe the current situation." wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic" size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="149.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How would you describe the state of electrical wiring and lighting in your school?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 of 6">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="39.0" fitWidth="284.0" layoutX="17.0" layoutY="92.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="217.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Does your school have reliable internet connectivity?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 of 6">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="39.0" fitWidth="284.0" layoutX="17.0" layoutY="92.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text layoutX="15.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If Yes, please describe the current situation." wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="53.0" fitWidth="282.0" layoutX="18.0" layoutY="145.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2046.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are there laboratories (e.g., Science, Computer) available and adequately equipped in your school?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 of 6">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="37.0" fitWidth="276.0" layoutX="17.0" layoutY="89.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                    <TextField layoutX="16.0" layoutY="148.0" prefHeight="43.0" prefWidth="280.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+                                    <Text layoutX="17.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If No, what is missing or needed?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic" size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="270.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Does your school have libraries or resource rooms that are accessible to students and adequately stocked?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6 of 6">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="37.0" fitWidth="276.0" layoutX="17.0" layoutY="89.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                    <TextField layoutX="16.0" layoutY="148.0" prefHeight="43.0" prefWidth="280.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+                                    <Text layoutX="17.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If No, please specify what is lacking." wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="35.0" fitWidth="282.0" layoutX="15.0" layoutY="210.0">
+                                       <image>
+                                          <Image url="@../Icons/Button.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button layoutX="15.0" layoutY="210.0" mnemonicParsing="false" onAction="#gotoStep3" opacity="0.0" prefHeight="33.0" prefWidth="282.0" text="Button" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="step3" prefHeight="749.0" prefWidth="348.0" visible="false">
+         <children>
+            <Pane layoutX="3.0" layoutY="180.0" prefHeight="567.0" prefWidth="339.0">
+               <children>
+                  <ScrollPane layoutY="-1.0" prefHeight="566.0" prefWidth="340.0" style="-fx-background-color: #ffffff;">
+                     <content>
+                        <VBox prefHeight="919.0" prefWidth="342.0">
+                           <children>
+                              <Pane prefHeight="203.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are there sufficient textbooks available for all subjects taught at your school?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 of 4">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="37.0" fitWidth="276.0" layoutX="17.0" layoutY="74.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                    <TextField layoutX="16.0" layoutY="145.0" prefHeight="43.0" prefWidth="280.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+                                    <Text layoutX="17.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If No, which subjects lack textbooks?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic" size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="203.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do students have access to digital learning materials?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 of 4">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="37.0" fitWidth="276.0" layoutX="17.0" layoutY="74.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                    <TextField layoutX="16.0" layoutY="145.0" prefHeight="43.0" prefWidth="280.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+                                    <Text layoutX="17.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If No, what digital materials are needed?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic" size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="203.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are computers, laptops, or tablets available for student use?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 of 4">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="37.0" fitWidth="276.0" layoutX="17.0" layoutY="74.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                    <TextField layoutX="16.0" layoutY="145.0" prefHeight="43.0" prefWidth="280.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+                                    <Text layoutX="17.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If No, how many devices are needed?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic" size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="259.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is the science lab adequately equipped with necessary apparatus and materials?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 of 4">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="37.0" fitWidth="276.0" layoutX="17.0" layoutY="91.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                    <TextField layoutX="16.0" layoutY="162.0" prefHeight="43.0" prefWidth="280.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+                                    <Text layoutX="17.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If No, how many devices are needed?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="35.0" fitWidth="282.0" layoutX="16.0" layoutY="219.0">
+                                       <image>
+                                          <Image url="@../Icons/Button.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button layoutX="17.0" layoutY="218.0" mnemonicParsing="false" onAction="#gotoStep4" opacity="0.0" prefHeight="37.0" prefWidth="285.0" text="Button" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <ImageView fitHeight="155.0" fitWidth="332.0" layoutX="12.0" layoutY="16.0">
+               <image>
+                  <Image url="@../Icons/Group%2047.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="step4" layoutX="1.0" prefHeight="749.0" prefWidth="348.0" visible="false">
+         <children>
+            <Pane layoutX="3.0" layoutY="198.0" prefHeight="549.0" prefWidth="339.0">
+               <children>
+                  <ScrollPane layoutY="18.0" prefHeight="535.0" prefWidth="340.0" style="-fx-background-color: #ffffff;">
+                     <content>
+                        <VBox prefHeight="657.0" prefWidth="342.0">
+                           <children>
+                              <Pane prefHeight="153.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What is the current teacher-student ratio at your school?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 of 3">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField layoutX="16.0" layoutY="96.0" prefHeight="43.0" prefWidth="131.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 25; -fx-border-width: 0.5;" />
+                                    <Text layoutX="17.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher" wrappingWidth="56.99998474121094">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField layoutX="157.0" layoutY="96.0" prefHeight="43.0" prefWidth="138.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 25; -fx-border-width: 0.5;" />
+                                    <Text layoutX="161.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student" wrappingWidth="53.799957275390625">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="147.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="16.99999237060547">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="37.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="203.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are there adequate teaching aids available for effective instruction?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 of 3">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="37.0" fitWidth="276.0" layoutX="17.0" layoutY="74.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                    <TextField layoutX="16.0" layoutY="145.0" prefHeight="43.0" prefWidth="280.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+                                    <Text layoutX="17.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If No, what teaching aids are needed?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic" size="10.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="246.0" prefWidth="342.0">
+                                 <children>
+                                    <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Does your school have sufficient special education teachers and counselors?" wrappingWidth="313.0">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 of 3">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="37.0" fitWidth="276.0" layoutX="17.0" layoutY="74.0">
+                                       <image>
+                                          <Image url="@../Icons/Group%2045%20(2).png" />
+                                       </image>
+                                    </ImageView>
+                                    <TextField layoutX="16.0" layoutY="145.0" prefHeight="43.0" prefWidth="280.0" style="-fx-background-color: #ffffff; -fx-border-color: #1E1E1E; -fx-border-radius: 10; -fx-border-width: 0.5;" />
+                                    <Text layoutX="18.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If No, please specify the number and type of additional staff needed." wrappingWidth="277.0">
+                                       <font>
+                                          <Font name="Century Gothic" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="35.0" fitWidth="282.0" layoutX="15.0" layoutY="203.0">
+                                       <image>
+                                          <Image url="@../Icons/Button.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ce0000" height="18.0" layoutX="51.0" layoutY="213.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                                    <Text fill="WHITE" layoutX="132.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Submit" wrappingWidth="67.66666412353516">
+                                       <font>
+                                          <Font name="Century Gothic Bold" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Button layoutX="17.0" layoutY="207.0" mnemonicParsing="false" onAction="#gotoSubmit" opacity="0.0" prefHeight="25.0" prefWidth="278.0" text="Button" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <ImageView fitHeight="183.0" fitWidth="335.0" layoutX="11.0" layoutY="14.0">
+               <image>
+                  <Image url="@../Icons/Group%2048.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="submit" prefHeight="755.0" prefWidth="345.0" visible="false">
+         <children>
+            <ImageView fitHeight="431.0" fitWidth="198.0" layoutX="68.0" layoutY="24.0">
+               <image>
+                  <Image url="@../Icons/Group%2049.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="95.0" layoutY="256.0" mnemonicParsing="false" onAction="#gotoHistory" opacity="0.0" prefHeight="116.0" prefWidth="148.0" text="Button" />
+         </children>
+      </Pane>
+      <Pane fx:id="history" layoutX="2.0" layoutY="1.0" prefHeight="755.0" prefWidth="345.0" visible="false">
+         <children>
+            <ImageView fitHeight="85.8" fitWidth="313.0" layoutX="12.0" layoutY="8.0">
+               <image>
+                  <Image url="@../Icons/Group%2041%20(1).png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="13.0" layoutY="110.0" prefHeight="84.0" prefWidth="313.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 10; -fx-border-width: 0.5;">
+               <children>
+                  <Text layoutX="69.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Needs Assessment #01">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Submitted: July 06, 2024">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#aefca1" height="23.0" layoutX="67.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="89.0" />
+                  <Text layoutX="84.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assessing">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="50.0" fitWidth="52.0" layoutX="10.0" layoutY="18.0">
+                     <image>
+                        <Image url="@../Icons/test.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button layoutX="23.0" layoutY="12.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button layoutX="23.0" layoutY="12.0" mnemonicParsing="false" onAction="#gotoHomepage" opacity="0.0" prefHeight="25.0" prefWidth="24.0" text="Button" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
